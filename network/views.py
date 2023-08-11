@@ -188,7 +188,7 @@ def post_edit(request, post_id):
     return JsonResponse({"updated": True}, status=201)
 
 
-def count_posts(request, username = ""):
+def count_posts(request):
     # Collect GET content
     username = request.GET.get("username") or ""
 
